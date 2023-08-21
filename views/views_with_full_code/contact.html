@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <link type="text/css" rel="stylesheet" href="../styles.css" /> <!-- /* https://www.w3schools.com/html/html_css.asp */-->
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+        
+        <script type="module" src="../index.js"></script>
+    </head>
+    <body>
+         
+        <header>
+            
+       
+        </header>
+            <nav> <!-- Navigation bar -->
+                
+                
+                
+            <ul>
+                <li> <a href="/">  Mario's Pizzaria </a></li>
+                <li><a href="/menu"> Menu </a> </li>
+                <li><a href="/contact"> Contact</a> </li>
+                <li><a href="/history"> Our History</a> </li>
+                 
+            </ul>
+            
+         </nav>
+         
+        <main>
+            <div id="map"></div>
+            
+
+            <!-- 
+             The `defer` attribute causes the callback to execute after the full HTML
+             document has been parsed. For non-blocking uses, avoiding race conditions,
+             and consistent behavior across browsers, consider loading using Promises
+             with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+            -->
+            <script
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQi_h8ypUSkGVnrzy9LRf-R7Iub1477L0&callback=initMap&v=weekly"
+              defer
+            ></script>
+    
+    
+ 
+          <div class="pulse"> Call now 123456789<br>
+          2305 8th Ave, New York, NY</div>
+
+     
+        </main>
+
+        <footer> 
+             
+        </footer>
+    </body>
+</html>
